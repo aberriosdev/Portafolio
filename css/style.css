@@ -1,0 +1,240 @@
+/* ---------------------- */
+/* Estilos Generales */
+/* ---------------------- */
+body {
+  background-color: #edf2ef;
+  font-family: 'Open Sans', serif;
+  padding-top: 54px;
+  color: #868e96;
+}
+
+body.dark-mode {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+/* ---------------------- */
+/* Tipografía */
+/* ---------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6C757D;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+}
+
+/* ---------------------- */
+/* Barra de Navegación */
+/* ---------------------- */
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+/* ---------------------- */
+/* Secciones de Contenido */
+/* ---------------------- */
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+
+  section.resume-section .resume-item {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* ---------------------- */
+/* Colores de Fondo y Texto */
+/* ---------------------- */
+.bg-primary {
+  background-color: #57c4e5 !important;
+}
+
+.text-primary {
+  color: #ED6A54 !important;
+}
+
+/* ---------------------- */
+/* Enlaces */
+/* ---------------------- */
+a {
+  color: #ED6A54;
+}
+
+a:hover, a:focus, a:active {
+  color: #D85C4B;
+}
+
+/* ---------------------- */
+/* Botones */
+/* ---------------------- */
+a.btn.btn-info,
+button.btn.btn-info {
+  background-color: #ED6A54;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+}
+
+a.btn.btn-info:hover,
+button.btn.btn-info:hover {
+  background-color: #D85C4B;
+  border: none;
+}
+
+#toggleTheme {
+  background-color: #9A57E5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#toggleTheme:hover {
+  background-color: #7A3BC6;
+  transform: scale(1.05);
+}
+
+#toggleTheme:focus {
+  outline: none;
+}
+
+body.dark-mode #toggleTheme {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode #toggleTheme:hover {
+  background-color: #495057;
+}
+
+/* ---------------------- */
+/* Listas */
+/* ---------------------- */
+ul {
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* ---------------------- */
+/* Iconos de Habilidades */
+/* ---------------------- */
+.fab.fa-html5 { color: #E34F26; }
+.fab.fa-python { color: #3572A5; }
+.fas.fa-database { color: #FFA500; }
+.fas.fa-tools { color: #6C757D; }
+.fa-mobile-alt { color: #007BFF; }
+
+/* ---------------------- */
+/* Efectos de Imágenes */
+/* ---------------------- */
+.navbar-img, #project .portfolio-img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-img:hover, #project .portfolio-img:hover {
+  transform: scale(1.05);
+}
+
